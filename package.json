@@ -1,0 +1,31 @@
+{
+  "name": "hiden-no-tare.npm",
+  "version": "1.0.0",
+  "author": "Hiroyuki ANAI <pirosikick@gmail.com>",
+  "devDependencies": {
+    "babel": "^5.4.3",
+    "babel-eslint": "^3.1.4",
+    "eslint": "^0.21.1",
+    "espower-babel": "^3.1.0",
+    "fixpack": "^2.2.0",
+    "mocha": "^2.2.5",
+    "power-assert": "^0.11.0"
+  },
+  "files": [
+    "lib",
+    "package.json"
+  ],
+  "license": {
+    "type": "MIT",
+    "url": "http://pirosikick.mit-license.org/"
+  },
+  "main": "lib/index.js",
+  "private": true,
+  "scripts": {
+    "build": "babel src -d lib",
+    "fixpack": "fixpack",
+    "lint": "eslint src test",
+    "test": "npm run build && mocha test/ --recursive --compilers js:espower-babel/guess",
+    "watch": "babel src -d lib -w & mocha --compilers js:espower-babel/guess -w"
+  }
+}
