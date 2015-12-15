@@ -1,5 +1,5 @@
 "use strict";
-import assert from "assert";
+import assert from "power-assert";
 import index from "../lib";
 
 describe("index", function () {
