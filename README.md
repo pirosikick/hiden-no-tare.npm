@@ -5,9 +5,9 @@
 hiden-no-tare.npm
 =================
 
-A project template of Node.js package for [@pirosikick](https://github.com/pirosikick).
+[@pirosikick](https://github.com/pirosikick)'s secret sauce for creating npm package.
 
-## Hou to use
+## How to use
 
 ### Initialize git repositry
 
@@ -27,7 +27,7 @@ $ npm install
 
 ### npm scripts
 
-All tasks for development defines with npm scripts.
+All tasks for development are defined as npm scripts.
 
 ```
 $ npm run
