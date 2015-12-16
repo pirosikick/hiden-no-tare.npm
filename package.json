@@ -3,6 +3,7 @@
   "description": "The secret sauce of @pirosikick for creating npm package",
   "version": "1.0.0",
   "author": "Hiroyuki ANAI <pirosikick@gmail.com>",
+  "bug": "https://github.com/pirosikick/hiden-no-tare.npm/issues",
   "devDependencies": {
     "babel": "^6.3.13",
     "babel-cli": "^6.3.17",
@@ -17,10 +18,15 @@
     "lib",
     "package.json"
   ],
+  "homepage": "https://github.com/pirosikick/hiden-no-tare.npm",
   "keywords": [],
   "license": "MIT",
   "main": "lib/index.js",
   "private": true,
+  "repositry": {
+    "type": "git",
+    "url": "https://github.com/pirosikick/hiden-no-tare.npm.git"
+  },
   "scripts": {
     "build": "babel src -d lib",
     "fixpack": "fixpack",
