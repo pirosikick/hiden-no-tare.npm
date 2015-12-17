@@ -1,9 +1,8 @@
 "use strict";
-import assert from "power-assert";
+import test from "ava";
 import index from "../lib";
 
-describe("index", function () {
-  it("returns 'Hello hoge' when it was called with 'hoge'", function () {
-    assert(index("hoge") === "Hello hoge");
-  });
+test("index('hoge')", t => {
+  t.ok(index("hoge") === "Hello hoge");
 });
+
