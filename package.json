@@ -7,11 +7,16 @@
   "devDependencies": {
     "ava": "^0.9.1",
     "babel": "^6.3.13",
-    "babel-cli": "^6.3.17",
     "babel-eslint": "^5.0.0-beta6",
     "babel-preset-es2015": "^6.3.13",
     "eslint": "^1.10.3",
-    "fixpack": "^2.2.0"
+    "fixpack": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-ava": "^0.6.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-plumber": "^1.0.1",
+    "run-sequence": "^1.1.5"
   },
   "files": [
     "lib",
@@ -27,10 +32,10 @@
     "url": "https://github.com/pirosikick/hiden-no-tare.npm.git"
   },
   "scripts": {
-    "build": "babel src -d lib --presets es2015",
+    "build": "gulp babel",
     "fixpack": "fixpack",
     "lint": "eslint src test",
-    "test": "npm run build && ava",
-    "watch": "npm run build -- -w & ava -w"
+    "test": "gulp test",
+    "start": "gulp"
   }
 }
