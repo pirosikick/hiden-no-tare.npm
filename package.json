@@ -1,7 +1,7 @@
 {
   "name": "hiden-no-tare.npm",
   "description": "The secret sauce of @pirosikick for creating npm package",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Hiroyuki ANAI <pirosikick@gmail.com>",
   "bug": "https://github.com/pirosikick/hiden-no-tare.npm/issues",
   "devDependencies": {
