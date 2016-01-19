@@ -30,6 +30,3 @@ build/Release
 node_modules
 
 lib/
-*.js
-!src/*.js
-!test/*.js
