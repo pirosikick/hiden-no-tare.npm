@@ -5,6 +5,7 @@ gulp.task('default', ['watch']);
 gulp.task('test', ['ava']);
 gulp.task('watch', ['babel'], () => {
   gulp.watch(['lib/**/*.js', 'test/**/*.js'], ['test']);
+  gulp.watch(['src/**/*.js'], ['babel']);
 });
 gulp.task('babel', () => {
   gulp.src(['src/**/*.js'])
