@@ -1,33 +1,18 @@
 {
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
-  },
-  "env": {
-    "es6": true,
-    "node": true,
-    "mocha": true
-  },
-  "extends": "eslint:recommended",
+  "plugins": ["node"],
+  "extends": ["airbnb-base", "plugin:node/recommended"],
+  "parser": "babel-eslint",
   "rules": {
-    "comma-dangle": 2,
-    "no-cond-assign": [2, "always"],
-    "no-constant-condition": 2,
-    "no-debugger": 1,
-    "no-dupe-args": 2,
-    "no-dupe-keys": 2,
-    "no-duplicate-case": 2,
-    "no-empty": 1,
-    "no-empty-character-class": 1,
-    "no-ex-assign": 2,
-    "no-extra-boolean-cast": 1,
-    "no-extra-parens": 1,
-    "no-extra-semi": 2,
-    "no-func-assign": 2,
-    "no-inner-declarations": 2,
-    "no-invalid-regexp": 2,
-    "no-irregular-whitespace": 2,
-    "no-use-before-define": [2, "nofunc"],
-    "strict": [2, "global"]
+    "arrow-parens": ["error", "as-needed"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ]
   }
 }

@@ -1,7 +1,6 @@
-import test from "ava";
-import index from "../lib";
+const test = require('ava');
+const index = require('../src');
 
 test("index('hoge')", t => {
-  t.ok(index("hoge") === "Hello hoge");
+  t.is(index('hoge'), 'Hello hoge');
 });
-
