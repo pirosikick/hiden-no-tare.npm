@@ -22,26 +22,7 @@ $ git add .
 $ git commit -m "Initial commit"
 
 # Install dependencies
-$ npm install
-```
-
-### npm scripts
-
-All tasks for development are defined as npm scripts.
-
-```
-$ npm run
-Available scripts in the hiden-no-tare.npm package:
-  build
-    babel src -d lib
-  fixpack
-    fixpack
-  lint
-    eslint src test
-  test
-    npm run build && mocha test/ --recursive --compilers js:espower-babel/guess
-  watch
-    babel src -d lib -w & mocha --compilers js:espower-babel/guess -w
+$ yarn install
 ```
 
 ## License
