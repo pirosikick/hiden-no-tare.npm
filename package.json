@@ -61,5 +61,8 @@
   },
   "engines": {
     "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "verror": "^1.9.0"
   }
 }
