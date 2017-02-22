@@ -1,6 +1,8 @@
 [![npm version](https://badge.fury.io/js/hiden-no-tare.npm.svg)](http://badge.fury.io/js/hiden-no-tare.npm)
 [![david](https://david-dm.org/pirosikick/hiden-no-tare.npm.svg)](https://david-dm.org/pirosikick/hiden-no-tare.npm)
 [![Build Status](https://travis-ci.org/pirosikick/hiden-no-tare.npm.svg)](https://travis-ci.org/pirosikick/hiden-no-tare.npm)
+[![codecov](https://codecov.io/gh/pirosikick/hiden-no-tare.npm/branch/master/graph/badge.svg)](https://codecov.io/gh/pirosikick/hiden-no-tare.npm)
+
 
 hiden-no-tare.npm
 =================
