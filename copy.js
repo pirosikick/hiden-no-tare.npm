@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 const path = require('path');
 const fs = require('fs');
 const VError = require('verror');
@@ -11,6 +10,8 @@ const targetFiles = [
   '.travis.yml',
   'package.json',
   'yarn.lock',
+  'src/index.js',
+  'test/index.js',
 ];
 
 function copy(src, dist) {
@@ -31,9 +32,14 @@ function copy(src, dist) {
 const copyPromise = targetFiles.reduce((promise, file) => (
   promise.then(() => {
     console.log(`copy ${file}...`);
+    const srcDir = path.dirname(file);
+    if (srcDir !== '.') {
+      fs.mkdirSync(path.join(process.cwd(), srcDir));
+    }
+
     const src = path.join(__dirname, file);
     const dist = path.join(process.cwd(), file);
-    return copy(src, dist)
+    return copy(src, dist);
   })
 ), Promise.resolve());
 
