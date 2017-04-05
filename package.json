@@ -5,7 +5,7 @@
   "author": "Hiroyuki ANAI <pirosikick@gmail.com>",
   "bug": "https://github.com/pirosikick/hiden-no-tare.npm/issues",
   "devDependencies": {
-    "ava": "^0.18.1",
+    "ava": "^0.19.0",
     "babel-cli": "^6.23.0",
     "babel-eslint": "^7.1.1",
     "babel-preset-flow": "^6.23.0",
