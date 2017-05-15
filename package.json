@@ -12,7 +12,7 @@
     "babel-register": "^6.23.0",
     "codecov": "^1.0.1",
     "eslint": "^3.15.0",
-    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-node": "^4.0.1",
     "flow-bin": "^0.39.0",
