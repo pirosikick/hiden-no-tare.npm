@@ -17,7 +17,7 @@
   "scripts": {
     "test": "echo \"run tests\"",
     "format": "prettier --write \"lib/*.js\"",
-    "lint": "src",
+    "lint": "eslint lib",
     "precommit": "lint-staged"
   },
   "lint-staged": {
