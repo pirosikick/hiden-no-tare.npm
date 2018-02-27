@@ -1,18 +1,4 @@
 {
   "plugins": ["node"],
-  "extends": ["airbnb-base", "plugin:node/recommended"],
-  "parser": "babel-eslint",
-  "rules": {
-    "arrow-parens": ["error", "as-needed"],
-    "comma-dangle": [
-      "error",
-      {
-        "arrays": "always-multiline",
-        "objects": "always-multiline",
-        "imports": "always-multiline",
-        "exports": "always-multiline",
-        "functions": "never"
-      }
-    ]
-  }
+  "extends": ["eslint:recommended", "plugin:node/recommended", "prettier"]
 }
