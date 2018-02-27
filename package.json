@@ -1,0 +1,22 @@
+{
+  "name": "hiden-no-tare.npm",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "repository": "https://github.com/pirosikick/hiden-no-tare.npm",
+  "author": "pirosikick <pirosikick@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.0"
+  },
+  "scripts": {
+    "test": "echo \"run tests\"",
+    "format": "prettier --write \"lib/*.js\"",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": ["prettier --write", "git add"]
+  }
+}
