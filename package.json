@@ -11,17 +11,19 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-node": "^6.0.1",
     "husky": "^0.14.3",
+    "jest": "^22.4.2",
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.0"
   },
   "scripts": {
-    "test": "echo \"run tests\"",
+    "test": "jest",
     "format": "prettier --write \"lib/*.js\"",
     "lint": "eslint lib",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "dev": "jest --watch"
   },
   "lint-staged": {
     "*.{js,json,css,md}": ["prettier --write", "git add"],
-    "*.js": ["eslint --fix", "git add"]
+    "*.js": ["eslint --fix", "git add", "jest --findRelatedTests"]
   }
 }
